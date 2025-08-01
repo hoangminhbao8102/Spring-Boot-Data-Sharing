@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="layout :: content">
+<form th:action="@{/products/save}" th:object="${product}" method="post">
+    <input type="text" th:field="*{name}" placeholder="Tên sản phẩm"/><br/>
+    <input type="number" th:field="*{price}" placeholder="Giá"/><br/>
+    <button type="submit">Lưu</button>
+</form>
+</html>

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="layout :: content">
+<form method="post" action="/login">
+    <input type="text" name="username" placeholder="Username"/><br/>
+    <input type="password" name="password" placeholder="Password"/><br/>
+    <button type="submit">Login</button>
+</form>
+</html>

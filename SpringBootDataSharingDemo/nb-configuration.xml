@@ -16,4 +16,37 @@ Any value defined here will override the pom.xml file value but is only applicab
         <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>11-web</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>
         <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>Tomcat</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>
     </properties>
+    <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+        <word>chia</word>
+        <word>Chào</word>
+        <word>Danh</word>
+        <word>databaseName</word>
+        <word>dữ</word>
+        <word>Giá</word>
+        <word>Hành</word>
+        <word>jdbc</word>
+        <word>liệu</word>
+        <word>localhost</word>
+        <word>Lưu</word>
+        <word>microsoft</word>
+        <word>minhbao</word>
+        <word>mừng</word>
+        <word>phẩm</word>
+        <word>sa</word>
+        <word>SpringBootDataSharingDemo</word>
+        <word>SpringBootDemo</word>
+        <word>sqlserver</word>
+        <word>SQLServerDialect</word>
+        <word>SQLServerDriver</word>
+        <word>sách</word>
+        <word>sản</word>
+        <word>sẻ</word>
+        <word>Thêm</word>
+        <word>trustServerCertificate</word>
+        <word>Tên</word>
+        <word>với</word>
+        <word>Xóa</word>
+        <word>đến</word>
+        <word>động</word>
+    </spellchecker-wordlist>
 </project-shared-configuration>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Spring Boot</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <h1>Spring Boot Data Sharing Demo</h1>
+    <nav>
+        <a th:href="@{/}">Home</a> |
+        <a th:href="@{/products}">Products</a> |
+        <a th:href="@{/login}">Login</a>
+    </nav>
+</header>
+<main th:insert="${content}"></main>
+<footer>
+    <p>&copy; 2025 Spring Boot Demo</p>
+</footer>
+</body>
+</html>
