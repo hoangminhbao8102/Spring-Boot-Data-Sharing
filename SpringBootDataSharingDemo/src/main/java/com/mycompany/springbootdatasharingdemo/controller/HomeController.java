@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
     @GetMapping("/")
-    public String home(Model model) {
-        model.addAttribute("title", "Trang chủ - Chia sẻ dữ liệu Spring Boot");
+    public String index(Model model) {
+        model.addAttribute("title", "Welcome to Spring Boot Data Sharing Demo");
         return "index";
     }
 }

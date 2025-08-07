@@ -17,35 +17,56 @@ Any value defined here will override the pom.xml file value but is only applicab
         <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>Tomcat</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>
     </properties>
     <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+        <word>báo</word>
         <word>chia</word>
+        <word>CHO</word>
         <word>Chào</word>
+        <word>classpath</word>
+        <word>cụ</word>
         <word>Danh</word>
         <word>databaseName</word>
+        <word>DỤNG</word>
         <word>dữ</word>
         <word>Giá</word>
+        <word>giữa</word>
         <word>Hành</word>
         <word>jdbc</word>
+        <word>Khai</word>
         <word>liệu</word>
         <word>localhost</word>
         <word>Lưu</word>
         <word>microsoft</word>
         <word>minhbao</word>
         <word>mừng</word>
+        <word>nhập</word>
+        <word>Nội</word>
         <word>phẩm</word>
         <word>sa</word>
         <word>SpringBootDataSharingDemo</word>
         <word>SpringBootDemo</word>
+        <word>sql</word>
         <word>sqlserver</word>
         <word>SQLServerDialect</word>
         <word>SQLServerDriver</word>
         <word>sách</word>
         <word>sản</word>
         <word>sẻ</word>
+        <word>sẽ</word>
+        <word>SỬ</word>
+        <word>Sửa</word>
+        <word>thay</word>
         <word>Thêm</word>
+        <word>thế</word>
+        <word>thể</word>
+        <word>trang</word>
+        <word>trong</word>
         <word>trustServerCertificate</word>
         <word>Tên</word>
+        <word>từng</word>
         <word>với</word>
         <word>Xóa</word>
+        <word>đây</word>
+        <word>được</word>
         <word>đến</word>
         <word>động</word>
     </spellchecker-wordlist>

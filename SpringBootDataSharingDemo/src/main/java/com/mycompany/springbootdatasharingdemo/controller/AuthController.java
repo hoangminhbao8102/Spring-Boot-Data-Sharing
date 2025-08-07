@@ -5,8 +5,10 @@
 package com.mycompany.springbootdatasharingdemo.controller;
 
 import com.mycompany.springbootdatasharingdemo.model.User;
+import com.mycompany.springbootdatasharingdemo.repository.UserRepository;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -15,6 +17,11 @@ import org.springframework.web.bind.annotation.*;
  */
 @Controller
 public class AuthController {
+    private final UserRepository userRepository;
+
+    public AuthController(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @GetMapping("/login")
     public String loginForm() {
@@ -22,17 +29,23 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public String login(@ModelAttribute User user, HttpSession session) {
-        if ("admin".equals(user.getUsername()) && "123".equals(user.getPassword())) {
-            session.setAttribute("user", user);
+    public String login(@RequestParam String username,
+                        @RequestParam String password,
+                        HttpSession session,
+                        Model model) {
+        User user = userRepository.findByUsername(username);
+        if (user != null && user.getPassword().equals(password)) {
+            session.setAttribute("loggedInUser", user);
             return "redirect:/products";
+        } else {
+            model.addAttribute("error", "Invalid credentials");
+            return "login";
         }
-        return "login";
     }
 
     @GetMapping("/logout")
     public String logout(HttpSession session) {
         session.invalidate();
-        return "redirect:/";
+        return "redirect:/login";
     }
 }
